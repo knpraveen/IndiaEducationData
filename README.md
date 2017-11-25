@@ -62,9 +62,9 @@ This project uses Python which is run using Anaconda through jyputer.
 
 It requires below packages
 
-| pandas      | matplotlib     | 
-| ------------- |:-------------:| 
 | numpy        | seaborn  | 
+| pandas        | matplotlib  | 
+
 
 ## Usage
 
