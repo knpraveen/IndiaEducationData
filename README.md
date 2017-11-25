@@ -1,4 +1,4 @@
-# Analysis of Graduate Female in India using Data Vsiualization
+# Analysis of Graduate Female in India using Data Visualization
 
 ## About the Author
 
