@@ -36,6 +36,7 @@ Type: Classify the state into Total population, urban population and rural popul
 - [Install](#install)
 - [Usage](#usage)
 - [Project Explaination](#Project-explaination)
+- [Preview of the plots](##Preview-of-the-plots)
 - [License](#license)
 
 ## Background
@@ -93,6 +94,19 @@ In this project we follow below steps
 7. Using Matplotlib to plot a scatter plot
 8. Visualization using Seaborn
 
-                                     
+## Preview of the plots
+
+| Graph Preview      |Graph Preview       | 
+| ------------- |:-------------:| 
+| ![GitHub Logo](/1.png)        | ![GitHub Logo](/2.png)  | 
+| ![GitHub Logo](/3.png)        | ![GitHub Logo](/4.png)  | 
+| ![GitHub Logo](/5.png)        | ![GitHub Logo](/6.png)  | 
+| ![GitHub Logo](/7.png)        | ![GitHub Logo](/8.png)  | 
+| ![GitHub Logo](/9.png)        | ![GitHub Logo](/10.png)  | 
+| ![GitHub Logo](/11.png)        | ![GitHub Logo](/12.png)  | 
+| ![GitHub Logo](/13.png)        | ![GitHub Logo](/14.png)  | 
+| ![GitHub Logo](/15.png)        | ![GitHub Logo](/16.png)  | 
+| ![GitHub Logo](/17.png)        |   | 
+                                   
 ## License
 Not Applicable
