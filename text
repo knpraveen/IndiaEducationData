@@ -1,0 +1,417 @@
+Purpose of the AI Education & Literacy Initiative
+
+Objective
+
+Establish a unified, company-wide baseline of AI literacy aligned with our enterprise AI roadmap.
+
+Ensure all employees understand what constitutes AI Use Cases, AI-Assisted Use Cases, and appropriate governance expectations.
+
+Mobilize the organization early to prevent capability gaps as AI adoption accelerates across the industry.
+
+Why This Matters
+
+AI is transforming operating models; without foundational literacy, teams risk misaligned development, duplication, and unmanaged risk.
+
+Early education ensures employees can identify opportunities responsibly and reduces “shadow AI” usage.
+
+Builds a culture of responsible innovation, enabling us to move faster and more confidently.
+
+Ask
+
+Approval to proceed with developing the enterprise-wide AI education module.
+
+
+Training Scope: AI Fundamentals + AIGP-Aligned Content
+
+Training Components
+
+AI Fundamentals: What AI is / isn’t, definitions, industry examples, and common misconceptions.
+
+Use Case Classification: Clear distinction between AI Use Cases vs. AI-Assisted Use Cases, aligned with our upcoming governance framework.
+
+Responsible AI & Guardrails: High-level overview of risks, controls, data privacy, model transparency, and oversight expectations.
+
+AIGP-Aligned Modules:
+
+Key concepts from globally recognized AI Governance certifications.
+
+Helps standardize our internal knowledge base across teams.
+
+Delivery Approach
+
+Internal development led by Enterprise Architecture & AI Team.
+
+Short, engaging video-based learning for all employees.
+
+Can be integrated into onboarding, annual training, and AI adoption workshops.
+
+Value to Organization
+
+Accelerates safe and scalable AI adoption across business units.
+
+Ensures consistent understanding of what can/cannot be built under new AI policies.
+
+Strengthens compliance posture and reduces operational risk.
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+Purpose of Enterprise-Wide AI Maturity Survey
+
+Objective
+
+Establish a holistic baseline of AI maturity across the organization, covering technology, data, culture, governance, talent, and risk readiness.
+
+Capture insights from all employees with role-based segmentation (e.g., leadership, managers, frontline, IT, data teams, business teams).
+
+Provide a factual starting point for tracking progress year-over-year.
+
+Why This Survey Is Critical
+
+AI adoption is accelerating; without an initial benchmark, we cannot measure improvement or prioritize investments.
+
+Enables leadership to identify where the organization stands today vs. where the industry is heading.
+
+Reduces guesswork by replacing assumptions with structured, quantifiable insights.
+
+Ask
+
+Approval to proceed with designing and launching a company-wide AI Maturity Survey.
+
+
+Scope & Design of the AI Maturity Survey
+
+Survey Dimensions (McKinsey-Inspired Framework)
+
+AI Strategy & Leadership Alignment
+
+Technology Capability & Infrastructure Readiness
+
+Data Quality, Accessibility & Governance
+
+Talent, Skills & AI Literacy Levels
+
+Operational Processes & Automation Readiness
+
+Innovation Culture & Experimentation Mindset
+
+Risk Management, Security & Responsible AI Controls
+
+Survey Design Approach
+
+Short, intuitive questionnaire accessible to all employees.
+
+Role-based tagging to allow maturity mapping across departments and job levels.
+
+Mix of quantitative scoring + qualitative insights to capture real adoption challenges.
+
+Expected Outcomes
+
+Clear baseline of current AI maturity by category, function, and role.
+
+Identification of key gaps and opportunities for targeted interventions.
+
+Foundation for a two-year AI roadmap with measurable KPIs and milestones.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Purpose of the Enterprise AI Hub
+
+Objective
+
+Establish a central AI community platform for employees to collaborate, share accomplishments, publish ideas, and exchange best practices.
+
+Create a unified digital space to highlight AI use cases, success stories, lessons learned, and internal thought leadership.
+
+Strengthen enterprise alignment by giving leadership visibility into AI activities across all business units.
+
+Why This Is Needed Now
+
+AI work is happening in pockets across the organization; without a central hub, efforts become siloed and duplicated.
+
+A dedicated platform accelerates responsible innovation by enabling knowledge sharing and reducing rework.
+
+Supports the company-wide AI initiative by promoting literacy, transparency, and cross-functional collaboration.
+
+
+
+Operating Model & Value to Leadership
+
+Operating Model
+
+Managed by the AI Architecture team with light governance:
+
+Tagging of content to approved categories (use case, blog, idea, help request).
+
+Ensuring alignment with AI policies and terminology.
+
+Periodic curation of featured content and success stories.
+
+Open to all employees for posting, collaboration, and discussions.
+
+Integrated with training, AI maturity initiatives, and future roadmap activities.
+
+Value to Leadership
+
+Visibility: Provides real-time insight into AI initiatives across the company.
+
+Innovation: Crowdsources ideas from employees at all levels, unlocking high-value concepts early.
+
+Efficiency: Reduces duplication of AI efforts across teams by centralizing knowledge and reusable components.
+
+Governance: Ensures discussions and ideas remain aligned with enterprise AI standards without heavy control.
+
+Culture Building: Encourages experimentation, continuous learning, and a community-driven AI culture.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+AI Chatbot for Grant Application Support (Orange Team)
+
+Objective
+
+Deploy an AI-powered assistant to help Orange Team members and stakeholders fill out grant applications accurately and efficiently.
+
+Use internal knowledge (successful past grants, FAQs, guidelines) to provide context-aware, tailored guidance during form completion.
+
+How It Works (Concept)
+
+Ingest and structure content from:
+
+Previously successful grant applications
+
+FAQ documents and internal guidance
+
+Instruction PDFs, policy docs, and templates
+
+AI chatbot guides users section-by-section:
+
+Explains questions in plain language
+
+Suggests structure/points to include (not final text)
+
+Reminds users of mandatory fields, deadlines, and common pitfalls
+
+Business Value
+
+Increases quality and consistency of submissions.
+
+Reduces time spent answering repetitive questions by the Orange Team.
+
+Improves conversion/success rate of grant applications.
+
+
+Design, Guardrails & Risk Management
+
+Technical Approach
+
+RAG-based (Retrieval-Augmented Generation) chatbot using:
+
+Curated, approved internal documents only.
+
+Metadata tagging by grant type, program, region, etc.
+
+Two-layer LLM pattern:
+
+Primary LLM: generates draft guidance based on retrieved content.
+
+Secondary, smaller LLM (or rules engine) validates:
+
+Alignment with original policy text.
+
+No fabrication of rules, eligibility, or financial figures.
+
+No completion of answers on behalf of the user where policy prohibits it.
+
+Guardrails & Governance
+
+Scope control: Chatbot restricted to grant-related topics only; redirects out-of-scope queries.
+
+Source citation: Responses anchored to specific sections of FAQs / policies so users can verify.
+
+Privacy & data protection:
+
+No storage of sensitive personal data in prompts beyond session needs.
+
+Redaction or masking of PII in logs where required.
+
+Human-in-the-loop:
+
+Clear escalation path: “Contact Orange Team” when confidence is low or policy conflict detected.
+
+Auditability:
+
+Logging of key interactions for quality review and continuous improvement.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+InsightStream AI: On-Demand Reporting From Customer Call Data
+
+Objective
+
+Leverage existing call transcripts to generate instant, user-requested reports powered by LLMs and enterprise guardrails.
+
+Provide leaders, QA teams, and analysts a unified way to extract actionable insights from thousands of customer interactions.
+
+What InsightStream AI Delivers
+
+High-accuracy interpretations of customer calls already transcribed.
+
+On-demand reports such as:
+
+Call summaries
+
+Trend & pattern analysis
+
+Sentiment and emotion heatmaps
+
+Complaint & escalation detection
+
+Advisor performance indicators
+
+“Ask-anything” insight queries (within policy scope)
+
+Designed as a user-first, conversational analytics tool.
+
+Business Value
+
+Eliminates manual review bottlenecks.
+
+Surfaces emerging customer issues early.
+
+Supports decision-making with real-time insights.
+
+Improves CX, quality assurance, and internal oversight.
+
+
+InsightStream AI: Architecture, Guardrails & Risk Controls
+
+Technical Approach
+
+Built on existing call transcripts (no new transcription pipeline needed).
+
+Uses a secure vector store + RAG to locate relevant call segments.
+
+LLM produces reports based strictly on transcript evidence.
+
+Integrates with internal dashboards for UI presentation (no exports outside internal systems).
+
+Enterprise Guardrails
+
+Privacy & PII Protection:
+
+Automated masking of sensitive info in transcript data.
+
+Restricted access based on role (supervisors, QA, leadership only).
+
+Two-Layer Model Validation:
+
+Primary LLM generates insights.
+
+Secondary small LLM/rules engine validates accuracy, bans hallucinations, and ensures alignment with call text.
+
+Strict Scope Enforcement:
+
+InsightStream AI cannot generate new customer statements or external policy advice.
+
+Only analyzes existing transcripts.
+
+Auditability:
+
+Full logging of queries, reports, and transcript segments referenced.
+
+Human-in-the-Loop:
+
+Low-confidence or high-risk items routed to QA reviewer.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+AI Case Closure Agent for CRM: Automating “No Further Action Needed” Emails
+
+Objective
+
+Deploy an AI agent that reviews incoming CRM emails and automatically closes cases when the customer has completed their action and no further response is required.
+
+Reduce operational workload by eliminating manual case review for emails that contain confirmation statements, attachments sent, or final acknowledgments.
+
+How It Works
+
+Customer sends an email with phrases like:
+
+“Attached is the document”
+
+“Here is what you requested”
+
+“I have submitted everything”
+
+“Thanks, no further questions”
+
+Attachment goes to Kofax, but the email remains in CRM.
+
+AI agent performs:
+
+Email content analysis
+
+Attachment confirmation check (via metadata/Kofax link)
+
+Intent classification: no questions, no requests, no new tasks
+
+Automatic closure of the case only if criteria are fully met.
+
+Business Value
+
+Eliminates high-volume, low-value manual case closure work.
+
+Improves SLA by reducing open case backlog.
+
+Enables agents to focus on complex cases requiring human judgment.
+
+Guardrails, Safety Controls & Exception Handling
+
+Conservative Automation Strategy
+
+AI only closes when confidence is 100% clear that no action is required.
+
+Any ambiguity → do not close and leave for manual review.
+
+Secondary classifier checks for:
+
+Questions (“what should I…?”, “can you…?”, “when will…?”)
+
+Requests (“please update…”, “I need…”)
+
+Missing documents or unclear statements
+
+Conflicting or multi-part emails
+
+Guardrails & Governance
+
+Two-layer validation:
+
+Primary LLM determines customer intent.
+
+Secondary small LLM/rules engine cross-verifies “no action required.”
+
+Attachment Verification:
+
+Confirm attachment metadata in Kofax before closure.
+
+If attachment not found → do not close.
+
+Audit Logs:
+
+Every auto-closure logged with rationale, model confidence, referenced email lines.
+
+Exception Routing:
+
+Emails with questions or new requests routed to the appropriate team queue.
+
+Safe Failure Mode:
+
+On uncertainty, the system defaults to human review, avoiding incorrect closures.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+
