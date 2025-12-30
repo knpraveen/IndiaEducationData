@@ -1,1 +1,351 @@
+Executive / CIO KPIs
+Overall Customer Sentiment Index
 
+Columns used
+
+customer_sentiment
+
+Calculation
+
+AVG(customer_sentiment)
+
+Sentiment Trend (WoW / MoM)
+
+Columns
+
+customer_sentiment
+
+call_date
+
+First Call Resolution (FCR %)
+
+Columns
+
+resolved_flag
+
+repeat_call_flag
+
+Logic
+
+Resolved = yes AND repeat_call_flag = false
+
+Repeat Call Rate
+
+Columns
+
+repeat_call_flag
+
+Escalation Rate
+
+Columns
+
+escalation_requested_flag
+
+transfer_mentioned_flag
+
+Customer Effort Index
+
+Columns
+
+customer_effort_proxy
+
+Churn Risk Index
+
+Columns
+
+churn_risk_score
+(or derived from sentiment + emotions)
+
+Complaint Rate
+
+Columns
+
+complaints (array → count > 0)
+
+2️⃣ Customer Experience (CX) KPIs
+Average Customer Sentiment
+
+Columns
+
+customer_sentiment
+
+Sentiment at Start
+
+Columns
+
+sentiment_start
+
+Sentiment at End
+
+Columns
+
+sentiment_end
+
+Sentiment Delta (Recovery Score)
+
+Columns
+
+sentiment_start
+
+sentiment_end
+
+Formula
+
+sentiment_end - sentiment_start
+
+% Calls with Positive Recovery
+
+Columns
+
+sentiment_delta
+
+Logic
+
+sentiment_delta > 0
+
+% Calls Ending Negative
+
+Columns
+
+sentiment_end
+
+Dominant Customer Emotions
+
+Columns
+
+customer_emotions
+
+Top Pain Points
+
+Columns
+
+top_pain_points
+
+3️⃣ Agent Performance KPIs
+Empathy Score
+
+Columns
+
+empathy_score_0_to_5
+
+Clarity Score
+
+Columns
+
+clarity_score_0_to_5
+
+Professionalism Score
+
+Columns
+
+professionalism_score_0_to_5
+
+Ownership Score
+
+Columns
+
+ownership_score_0_to_5
+
+De-escalation Quality
+
+Columns
+
+de_escalation_quality_0_to_5
+
+Overall Agent Quality Index
+
+Columns
+
+empathy_score_0_to_5
+
+clarity_score_0_to_5
+
+professionalism_score_0_to_5
+
+ownership_score_0_to_5
+
+de_escalation_quality_0_to_5
+
+Formula
+
+Weighted average
+
+Missed Opportunity Rate
+
+Columns
+
+missed_opportunities
+
+Coaching Needed (%)
+
+Columns
+
+coaching_suggestions
+
+4️⃣ Resolution & Outcome KPIs
+Resolution Rate
+
+Columns
+
+resolved_flag
+
+Follow-up Required Rate
+
+Columns
+
+follow_up_required_flag
+
+Commitment Fulfillment Risk
+
+Columns
+
+commitments_made
+
+resolved_flag
+
+Unclear Outcome Rate
+
+Columns
+
+resolved_flag = "unclear"
+
+5️⃣ Training & L&D KPIs
+Top Training Needs
+
+Columns
+
+training_topics_recommended
+
+Knowledge Gap Frequency
+
+Columns
+
+knowledge_gaps
+
+Policy Confusion Rate
+
+Columns
+
+policy_confusion_flags
+
+Training Effectiveness (Post vs Pre)
+
+Columns
+
+training_topics_recommended
+
+agent_id
+
+call_date
+
+agent_quality_index
+
+6️⃣ Risk & Compliance KPIs
+PII Exposure Rate
+
+Columns
+
+pii_detected
+
+PII Type Distribution
+
+Columns
+
+pii_types
+
+Compliance Incident Rate
+
+Columns
+
+compliance_flags.type
+
+High Severity Risk Rate
+
+Columns
+
+compliance_flags.severity
+
+Repeat Risk by Agent
+
+Columns
+
+agent_id
+
+compliance_flags
+
+7️⃣ Voice of Customer (VoC) KPIs
+Top Call Drivers
+
+Columns
+
+primary_intent
+
+issue_category
+
+Root Cause Distribution
+
+Columns
+
+root_cause_hypothesis
+
+Feature Request Frequency
+
+Columns
+
+feature_requests
+
+Suggested Process Fix Themes
+
+Columns
+
+suggested_process_fix
+
+Suggested Product Fix Themes
+
+Columns
+
+suggested_product_fix
+
+8️⃣ Conversation Structure KPIs (Text-Only)
+Agent Talk Ratio
+
+Columns
+
+talk_turns_agent
+
+talk_turns_customer
+
+Conversation Complexity Index
+
+Columns
+
+talk_turns_agent
+
+talk_turns_customer
+
+key_moments
+
+Key Moment Frequency
+
+Columns
+
+key_moments.moment_type
+
+9️⃣ Data Quality KPIs (Critical but Often Missed)
+Transcript Quality Issues Rate
+
+Columns
+
+transcript_quality_issues
+
+Low Confidence Extraction Rate
+
+Columns
+
+*_confidence fields
+
+Calls with Missing Speaker Labels
+
+Columns
+
+speaker_labeled
