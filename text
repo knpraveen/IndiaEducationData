@@ -1,1 +1,550 @@
 
+AI Solution Intake Form (Enterprise Standard, Governance-Compliant)
+
+Sections 1–12 (Exhaustive)
+Use this template for every AI use case, pilot, POC, or production build.
+
+1. Basic Information
+
+Project Name / AI Solution Name
+
+Business Owner / Sponsor
+
+Department / Line of Business
+
+Requester / Submission Contact
+
+Priority Level (Regulatory, customer-facing, automation, research, etc.)
+
+Submission Date
+
+Required Completion Timeline
+
+Is this a New Use Case, Enhancement, or Sunsetting Request?
+
+2. Business Purpose & Problem Definition
+
+Describe the business problem.
+
+Why is AI needed instead of traditional automation?
+
+What value will this solution drive?
+(Revenue, efficiency, cost reduction, risk mitigation, customer experience)
+
+KPIs / Success Metrics
+(ROI, MTTR, accuracy improvement, automation %, processing time reduction)
+
+Is the problem well-defined and measurable?
+
+Is this aligned with enterprise strategy / AI roadmap?
+
+3. AI Use Case Category
+
+Select all that apply:
+
+Generative AI (text, image, code generation)
+
+RAG / Knowledge Retrieval
+
+Predictive Modeling / ML
+
+Classification / NLP / Chatbot
+
+Recommendation Engine
+
+Decision Support
+
+Automation / Agentic Workflow
+
+Document Understanding (OCR + LLM)
+
+Voice / Speech
+
+Computer Vision
+
+Risk / Fraud / Underwriting model
+
+4. Data Assessment
+4.1 Data Sources
+
+Internal databases
+
+Documents (PDF, Word, SOPs)
+
+CRM, ERP, Policy admin systems
+
+Call transcripts
+
+Customer data
+
+Third-party APIs / Vendors
+
+4.2 Data Sensitivity
+
+Does the data contain:
+
+PII
+
+PHI
+
+Financial data
+
+Customer identifiers
+
+Confidential enterprise documents
+
+Regulated data (Insurance, Banking, Healthcare)
+
+If yes, what masking/redaction is needed?
+
+4.3 Data Access
+
+Who owns the data?
+
+How is access governed?
+
+Encryption (at rest / in transit)
+
+Data retention requirements
+
+Data residency (Canada, US, EU)
+
+5. AI Governance & Responsible AI Checks
+5.1 Fairness
+
+Could the model cause bias?
+
+Is the dataset representative?
+
+Are protected classes involved?
+
+5.2 Transparency
+
+Does the solution generate explanations (SHAP, PDP, rationale logging)?
+
+Do users understand the model boundaries?
+
+5.3 Accountability
+
+Who approves the model?
+
+Who monitors and reviews it?
+
+5.4 Human-in-the-Loop Requirements
+
+Does the decision require manual review?
+
+Under what scenarios?
+
+5.5 Hallucination Risk
+
+Is the system allowed to generate new information?
+
+Guardrails required:
+
+RAG grounding
+
+Prompt rules
+
+Refusal logic
+
+5.6 Compliance & Legal Considerations
+
+Are there regulatory impacts?
+(OSFI, FINTRAC, Insurance regulators, GDPR, PIPEDA)
+
+IP considerations
+
+Vendor compliance if using 3rd party LLMs
+
+6. Model Details
+
+(For ML or LLM solutions)
+
+Model Type: LLM, RAG, supervised ML, transformer, tree model
+
+Model Provider: Azure OpenAI, AWS Bedrock, Gemini, Self-hosted, Open source
+
+Version & Release Date
+
+Fine-tuning required? ☐ Yes / ☐ No
+
+Embeddings required? ☐ Yes / ☐ No
+If yes:
+
+Embedding model
+
+Vector DB used (Pinecone, OpenSearch, FAISS)
+
+Is this model making decisions or recommendations?
+
+Expected accuracy / performance baseline
+
+7. System Architecture Requirements
+
+Cloud provider (Azure / AWS / GCP / On-prem)
+
+Network & VPC requirements
+
+API integrations needed
+
+Authentication:
+
+Enterprise SSO
+
+OAuth2
+
+API key vault (KMS)
+
+Storage (Blob, S3, Delta Lake)
+
+MLOps:
+
+CI/CD required?
+
+Model registry?
+
+Versioning?
+
+Logging & Telemetry:
+
+Prompt logs
+
+Audit trails
+
+Vector store logs
+
+8. Security Requirements
+
+Threat model (abuse, prompt injection, jailbreak)
+
+Data exfiltration controls
+
+Rate limiting & quotas
+
+Output monitoring
+
+Guardrails library used (Presidio, Bedrock Guardrails, Azure Safety Filters)
+
+Isolation requirements (dedicated environment?)
+
+9. Privacy Impact Assessment
+
+Privacy classification: Low / Medium / High
+
+Customer consent required?
+
+Internal consent required?
+
+Will outputs store personal data?
+
+Retention period for:
+
+Prompts
+
+Embeddings
+
+Model logs
+
+Chat history
+
+10. Risk Assessment
+10.1 Operational Risks
+
+Incorrect output risk
+
+System reliability
+
+Manual fallback plan
+
+10.2 Business Risks
+
+Wrong decisions affecting customers
+
+KPIs not met
+
+Regulatory audits
+
+10.3 Legal Risks
+
+Copyright
+
+IP leakage
+
+Compliance issues
+
+10.4 Model Risks
+
+Drift
+
+Accuracy degradation
+
+Bias amplification
+
+11. Deployment & Lifecycle
+11.1 Environments Required
+
+Dev
+
+Test
+
+UAT
+
+Prod
+
+Sandbox
+
+11.2 Monitoring Requirements
+
+Drift monitoring
+
+Accuracy monitoring
+
+Hallucination monitoring
+
+SLA / SLO expectations
+
+Incident playbook
+
+11.3 Retraining & Updates
+
+Retraining frequency
+
+Data refresh strategy
+
+Decommission plan
+
+12. Cost & Licensing
+
+LLM cost estimation (tokens, vector DB, API calls)
+
+Third-party licensing required
+
+Budget approval
+
+Long-term cloud cost projection
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+AI Use Case Scoring Rubric (Enterprise Standard)
+
+Score each dimension from 1 to 5.
+Total Score determines Risk Tier.
+
+Section A — Business Criticality (Weight: 20%)
+Criterion	1 (Low)	3 (Medium)	5 (High)
+Impact on Customers	Internal only; no customer exposure	Customer-facing but informational only	Direct impact on customer decisions, claims, underwriting, eligibility
+Business Dependence	Nice-to-have	Improves efficiency	Core business decision-making
+Financial Impact	< $100K	$100K–$1M	> $1M impact or regulatory importance
+Strategic Alignment	Not aligned to enterprise goals	Indirectly aligned	Critical strategic priority
+Section B — Data Sensitivity & Privacy (Weight: 20%)
+Criterion	1 (Low)	3 (Medium)	5 (High)
+PII/PHI Usage	No PII	Minimal PII with masking	High PII/PHI, financial data, minors' data
+Confidentiality of Inputs	Public data or synthetic	Internal documents	Highly confidential policy admin, customer records
+Data Residency / Compliance	No restrictions	Some residency constraints	Strong compliance obligations (GDPR, PIPEDA, Insurance regulators)
+Privacy Risk	No privacy impact	Needs privacy review	Needs full DPIA/PIA approval
+Section C — Model Risk & Technical Complexity (Weight: 20%)
+Criterion	1 (Low)	3 (Medium)	5 (High)
+Model Type	Deterministic / rules-based	Classical ML	LLM, deep learning, RAG, agentic workflows
+Model Autonomy	Advisory only	Shared autonomy	Automated decisions with minimal HITL
+Explainability	Fully explainable	Partially explainable	Low explainability (LLM, embeddings, transformers)
+Hallucination Risk	None	Moderate	High risk of generating false or misleading content
+Section D — Ethical & Responsible AI Risk (Weight: 15%)
+Criterion	1 (Low)	3 (Medium)	5 (High)
+Bias / Fairness Impact	No impact on people	Moderate impact	Affects financial decisions, benefits, or service eligibility
+Human-in-the-loop (HITL)	Full manual review	Partial HITL	Fully automated decisions
+Harm Potential	Minimal	Reputational	Real-world harm to customers or employees
+Transparency Requirements	No need for explanations	Some requirement	High transparency essential (claims, underwriting, credit scoring)
+Section E — Security Risk (Weight: 10%)
+Criterion	1 (Low)	3 (Medium)	5 (High)
+Threat Exposure	Internal isolated system	Some external APIs	Public-facing, API integrations, high cyber risk
+Prompt Injection / Jailbreak Vulnerability	None	Controlled	High likelihood
+Model Output Logging Sensitivity	Non-sensitive	Some sensitive outputs	PII or regulated data in logs
+Vendor Dependency	No vendor	Standard cloud provider	High-risk vendor reliance or multi-vendor dependencies
+Section F — Operational & Maintenance Risk (Weight: 15%)
+Criterion	1 (Low)	3 (Medium)	5 (High)
+Deployment Complexity	Simple	Moderate	Multi-system, multi-cloud, real-time
+Monitoring Needs	Standard	Requires model monitoring	Needs drift, explainability, continuous audit
+Retraining Frequency	None	Periodic	Continuous due to dynamic data
+Business Continuity Dependency	No impact if model fails	Some downtime impact	Severe service disruption risk
+🎯 Risk Tier Calculation
+Step 1 → Score each criterion (1–5)
+
+Multiply each section total by its weight:
+
+A: Business Criticality × 0.20
+
+B: Data Sensitivity × 0.20
+
+C: Model Risk × 0.20
+
+D: Ethical Risk × 0.15
+
+E: Security Risk × 0.10
+
+F: Operational Risk × 0.15
+
+Step 2 → Add weighted scores
+
+Final Score Range → Risk Tier:
+
+Final Score	Tier	Required Oversight
+1–2.0	Low Risk AI	Fast-track approval; architecture review only
+2.1–3.5	Medium Risk AI	Requires AI Governance Review + Privacy Review
+3.6–5.0	High Risk AI	Full AI Governance Board, Legal, Compliance, Model Risk Office review
+🔐 What Each Tier Means
+Low Risk
+
+Internal automation
+
+No PII
+
+Deterministic or supervised ML
+
+Minimal governance required
+
+Medium Risk
+
+Uses internal customer data
+
+Some autonomy
+
+Partial explainability concerns
+
+Requires DPIA + technical guardrails
+
+High Risk
+
+Customer-facing decisions
+
+Financial impact
+
+LLM-based decisioning
+
+Requires full Responsible AI controls, logging, guardrails, and human oversight
+
+++++++++++++++++++++++++++++++++++++++++++
+
+AI Use Case Intake + Scoring Form (SharePoint / PowerApps Field Specification)
+All fields grouped, with correct field types, dropdown values, scoring logic, governance workflow flags.
+🔵 SECTION 1 — Basic Use Case Information
+Field Name	Type	Options / Details
+Use Case Title	Single line text	Required
+Business Unit	Choice	List departments
+Requestor Name	Person/People Picker	Required
+Executive Sponsor	Person/People Picker	Optional
+Date Submitted	Date	Default: Today
+Use Case Type	Choice	New / Enhancement / Sunset
+Priority	Choice	Low / Medium / High
+Target Implementation Timeline	Date	Optional
+🔵 SECTION 2 — Business Purpose
+Field Name	Type
+Business Problem Statement	Multi-line text
+Why AI vs Traditional Automation?	Multi-line text
+Expected Value (KPIs)	Multi-line text
+Strategic Alignment	Choice: Low / Medium / High
+🔵 SECTION 3 — AI Solution Category
+Field Name	Type	Values
+AI Category	Choice (multi-select)	GenAI, RAG, Predictive ML, NLP/Chatbot, Document Understanding, Voice/Speech, Recommendation, Agentic Workflow, CV, Fraud/Risk
+🔵 SECTION 4 — Data Requirements
+Field Name	Type	Values
+Data Sources	Multi-line text	
+Contains PII/PHI?	Choice	Yes / No
+Type of Sensitive Data	Choice (multi-select)	PII / PHI / Financial / Confidential Docs
+Data Residency Requirement	Choice	None / Canada only / US only / GDPR Applicable
+Privacy Impact Level	Choice	Low / Medium / High
+Required Data Masking	Multi-line text	
+🔵 SECTION 5 — Governance & Responsible AI
+Field Name	Type	Values
+Fairness Consideration	Choice	Low / Medium / High
+Human-in-the-Loop Required?	Choice	Yes / No / Partial
+Explainability Requirements	Choice	None / Partial / High
+Hallucination Risk	Choice	Low / Medium / High
+Regulatory Impact	Choice	None / Moderate / Significant
+Compliance Dependencies	Multi-line text	
+🔵 SECTION 6 — Model Details
+Field Name	Type
+Model Type	Choice: LLM, ML, RAG, CV, Hybrid
+Cloud Provider	Choice: Azure, AWS, GCP, On-Prem
+Model Provider	Choice: Azure OpenAI, AWS Bedrock, Gemini, Open-source
+Fine-Tuning Required?	Yes/No
+Embeddings Required?	Yes/No
+Vector DB Used	Choice: Pinecone, OpenSearch, FAISS, None
+Expected Accuracy	Number (%)
+🔵 SECTION 7 — Architecture Requirements
+Field Name	Type
+Integration Endpoints	Multi-line text
+Authentication Type	Choice: SSO, API Keys, OAuth2
+Storage Requirements	Choice: Blob, S3, Delta, SQL, NoSQL
+Logging Requirements	Multi-line text
+MLOps Needed?	Choice: Yes / No
+Monitoring Required?	Choice: None, Basic, Advanced
+🔵 SECTION 8 — Security
+Field Name	Type	Values
+Threat Exposure	Choice: Low / Medium / High	
+Prompt Injection Risk	Choice: Low / Medium / High	
+Sensitive Output Logging	Choice: Yes / No	
+Vendor Dependency Level	Choice: Low / Medium / High	
+🔵 SECTION 9 — Operational Risk
+Field Name	Type
+Deployment Complexity	Choice: Low / Medium / High
+Retraining Frequency	Choice: None / Quarterly / Continuous
+Business Continuity Impact	Choice: Low / Medium / High
+Failure Fallback Plan	Multi-line text
+🟣 SECTION 10 — AUTOMATIC SCORING (PowerApps Logic)
+
+You will need numeric hidden fields to compute risk score.
+
+These fields are HIDDEN:
+Hidden Field Name	Type	Notes
+BusinessCriticalityScore	Number	Calculated from Section 2
+DataSensitivityScore	Number	Section 4
+ModelRiskScore	Number	Section 5 & 6
+EthicalRiskScore	Number	Responsible AI section
+SecurityRiskScore	Number	Section 8
+OperationalRiskScore	Number	Section 9
+WeightedRiskScore	Number	Formula (below)
+🧮 SCORING FORMULA (Copy into PowerApps)
+WeightedRiskScore =
+(BusinessCriticalityScore * 0.20) +
+(DataSensitivityScore * 0.20) +
+(ModelRiskScore * 0.20) +
+(EthicalRiskScore * 0.15) +
+(SecurityRiskScore * 0.10) +
+(OperationalRiskScore * 0.15)
+
+🟥 SECTION 11 — Risk Tier (Automatically Assigned)
+Field Name	Type	Logic
+RiskTier	Calculated	Formula below
+PowerApps formula:
+If(
+    WeightedRiskScore <= 2, "Low Risk",
+    WeightedRiskScore <= 3.5, "Medium Risk",
+    "High Risk"
+)
+
+🟢 SECTION 12 — Required Governance Workflow (Auto Generated)
+Field Name	Type	Logic
+GovernanceRequired	Calculated	See logic
+PowerApps formula:
+If(
+    RiskTier = "Low Risk", "Architecture Review Only",
+    RiskTier = "Medium Risk", "AI Governance + Privacy Review",
+    "Full AI Governance Board Review + Legal + Compliance"
+)
+
+🟡 SECTION 13 — Attachments
+Field Name	Type
+Attachments	File Upload
+Architecture Diagram	File Upload
+Data Dictionary	File Upload
+Model Documentation	File Upload
+🟣 SECTION 14 — Approvals & Workflow
+Field Name	Type
+Architecture Team Approval	Choice: Pending / Approved / Rejected
+Privacy Office Approval	Choice
+Compliance Approval	Choice
+AI Governance Board Approval	Choice
+Final Decision	Choice: Approved / Rejected / Needs Revision
+Notes	Multi-line text
